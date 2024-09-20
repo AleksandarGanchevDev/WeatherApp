@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(assets/background.jpg);
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 440px;
+  height: 115px;
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+}
+
+.inputBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid white;
+  width: 400px;
+  height: 70px;
+  border-radius: 20px;
+}
+
+.mapBox {
+  position: absolute;
+  top: 55%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.searchInput {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.searchInput::placeholder {
+  color: white;
+  text-transform: capitalize;
+}
+
+.searchBtn {
+  position: absolute;
+  top: 55%;
+  left: 93%;
+  transform: translate(-50%, -50%);
+
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
