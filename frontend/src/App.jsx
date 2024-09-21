@@ -80,6 +80,7 @@ function App() {
   };
 
   return (
+    <>
     <div className={`container ${showResult ? "expanded" : ""}`}>
       <div className={`inputBox ${showResult ? "expanded" : ""}`}>
         <div className="mapBox">
@@ -101,6 +102,8 @@ function App() {
 
       <div className="result">{renderResult()}</div>
     </div>
+  <div className='author'>Developed by Aleksandar Ganchev</div>
+  </>
   );
 }
 
