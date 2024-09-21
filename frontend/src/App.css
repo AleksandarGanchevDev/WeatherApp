@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -70%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -20,6 +31,12 @@ body {
   height: 115px;
   backdrop-filter: blur(30px);
   border-radius: 20px;
+
+  transition: height 1s ease;
+}
+
+.container.expanded {
+  height: 300px;
 }
 
 .inputBox {
@@ -32,6 +49,12 @@ body {
   width: 400px;
   height: 70px;
   border-radius: 20px;
+
+  transition: top 1s ease;
+}
+
+.inputBox.expanded {
+  top: 20%;
 }
 
 .mapBox {
@@ -71,4 +94,81 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.temp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 700;
+  font-size: 65px;
+  color: white;
+
+  animation: slideDown 1.5s forwards;
+}
+
+.weather {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+
+  animation: slideDown 1s forwards;
+}
+
+.humidity {
+  position: absolute;
+  top: 85%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+
+  animation: slideDown 1s forwards;
+}
+
+.humidityIcon {
+  position: absolute;
+  top: 35%;
+  left: -30%;
+  transform: translate(-50%, -50%);
+}
+
+.wind {
+  position: absolute;
+  top: 85%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+
+  animation: slideDown 1s forwards;
+}
+
+.windIcon {
+  position: absolute;
+  top: 35%;
+  left: -20%;
+  transform: translate(-50%, -50%);
+}
+
+.textHumidityWind {
+  text-transform: capitalize;
+  font-size: 13px;
 }
