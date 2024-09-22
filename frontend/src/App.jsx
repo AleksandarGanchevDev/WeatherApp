@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "boxicons";
 import "./App.css";
 
-const apiKey = "e74f15fbf52276b20ee03c52c124fd55";
+const apiKey = import.meta.env.VITE_API_KEY;
 
 function App() {
   const [city, setCity] = useState("");
