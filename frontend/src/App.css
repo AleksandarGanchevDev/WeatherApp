@@ -50,7 +50,7 @@ body {
   height: 70px;
   border-radius: 20px;
 
-  transition: top 1s ease;
+  transition: top 0.5s ease;
 }
 
 .inputBox.expanded {
@@ -106,7 +106,7 @@ body {
   font-size: 65px;
   color: white;
 
-  animation: slideDown 1.5s forwards;
+  animation: slideDown 0.5s forwards;
 }
 
 .weather {
@@ -121,7 +121,7 @@ body {
   color: white;
   text-transform: uppercase;
 
-  animation: slideDown 1s forwards;
+  animation: slideDown 0.5s forwards;
 }
 
 .humidity {
@@ -136,7 +136,7 @@ body {
   color: white;
   text-transform: uppercase;
 
-  animation: slideDown 1s forwards;
+  animation: slideDown 0.5s forwards;
 }
 
 .humidityIcon {
@@ -158,7 +158,7 @@ body {
   color: white;
   text-transform: uppercase;
 
-  animation: slideDown 1s forwards;
+  animation: slideDown 0.5s forwards;
 }
 
 .windIcon {
